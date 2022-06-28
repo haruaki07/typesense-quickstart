@@ -1,5 +1,7 @@
 TYPESENSE_API_KEY ?=abcde
 
+default: download-dummy-data start-typesense
+
 download-dummy-data: 
 	curl -O https://dl.typesense.org/datasets/books.jsonl.gz
 	gunzip books.jsonl.gz
